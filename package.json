@@ -1,0 +1,38 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install:frontend": "cd frontend && npm install",
+    "install:backend": "cd backend && npm install",
+    "install": "npm run install:frontend && npm run install:backend",
+    "prettify": "prettier --write \"**/*.{ts,tsx,json,md,scss,html,yml}\"",
+    "lint:type": "npm run lint:type --workspaces --if-present",
+    "lint:prettify": "prettier --check \"**/*.{ts,tsx,json,md,scss,html,yml}\"",
+    "lint:js": "npm run lint:js --workspaces --if-present -- --max-warnings=0",
+    "lint:css": "npm run lint:css --workspaces --if-present",
+    "lint": "npm run lint:prettify && npm run lint:type && npm run lint:js && npm run lint:css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^2.8.7"
+  },
+  "dependencies": {
+    "stylelint": "^15.4.0",
+    "stylelint-config-standard": "^32.0.0",
+    "stylelint-order": "^6.0.3"
+  }
+}

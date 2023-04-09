@@ -1,0 +1,32 @@
+env:
+  browser: true
+  node: true
+  es2021: true
+  jest: true
+
+parser: '@typescript-eslint/parser'
+
+plugins:
+  - '@typescript-eslint'
+  - prettier
+  - import
+  - simple-import-sort
+
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:prettier/recommended
+
+rules:
+  no-console: error
+  '@typescript-eslint/quotes':
+    - error
+    - single
+  prettier/prettier: error
+  '@typescript-eslint/explicit-function-return-type': error
+  import/named: error
+  import/default: error
+  import/namespace: error
+  # simple-import-sort/imports:
+  #     - error
+  simple-import-sort/imports: error

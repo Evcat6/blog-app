@@ -1,0 +1,11 @@
+# Ignore build output directories
+dist/
+build/
+out/
+
+# Ignore node_modules directories
+node_modules/
+
+# Ignore generated files
+*.generated.ts
+*.generated.js

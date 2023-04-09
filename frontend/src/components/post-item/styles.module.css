@@ -1,0 +1,18 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    column-gap: 5px;
+}
+
+.redirect_icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.trash_icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
