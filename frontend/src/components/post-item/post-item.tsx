@@ -48,7 +48,9 @@ const PostItem: React.FC<Properties> = ({ id, title, content, created_at }) => {
                 text={content}
                 onUpdate={onUpdatePostContent}
             />
-            <p>Created at: {getDate(created_at)}</p>
+            <p className={styles.create_at}>
+                Created at: {getDate(created_at)}
+            </p>
             <FontAwesomeIcon
                 className={styles.redirect_icon}
                 icon={FaIcons.REDIRECT}

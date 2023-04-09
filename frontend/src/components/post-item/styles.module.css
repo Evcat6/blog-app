@@ -2,17 +2,25 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    padding: 20px 40px;
     column-gap: 5px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 50%);
 }
 
 .redirect_icon {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 20px;
 }
 
 .trash_icon {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 20px;
+    left: 20px;
+}
+
+.created_at {
+    text-align: center;
 }

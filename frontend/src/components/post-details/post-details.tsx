@@ -54,7 +54,9 @@ const PostDetails: React.FC<Properties> = ({
                     text={content}
                     onUpdate={onUpdatePostContent}
                 />
-                <p>Created at: {getDate(created_at)}</p>
+                <p className={styles.created_at}>
+                    Created at: {getDate(created_at)}
+                </p>
                 <FontAwesomeIcon
                     className={styles.trash_icon}
                     icon={FaIcons.TRASH}
