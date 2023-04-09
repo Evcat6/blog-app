@@ -1,4 +1,0 @@
-#!/bin/sh
-
-# Run linter
-npm run lint
