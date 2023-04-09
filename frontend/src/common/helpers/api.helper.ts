@@ -1,13 +1,12 @@
+import { Environment } from '../config/environment';
 import { ApiMethod } from '../enums/api-methods.enum';
-
-const API_URL = import.meta.env.VITE_API_URL;
 
 async function callApi<T>(
     endpoint: string,
     method = ApiMethod.GET,
     body?: unknown
 ): Promise<T> {
-    const url = API_URL + endpoint;
+    const url = Environment.VITE_API_URL + endpoint;
 
     const res = await fetch(url, {
         method,

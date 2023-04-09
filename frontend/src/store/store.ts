@@ -1,5 +1,6 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 
+import { Environment } from '../common/config/environment';
 import { AppEnvironment } from '../common/enums/enums';
 import {
     commentService as comment,
@@ -22,7 +23,7 @@ const middleware = getDefaultMiddleware({
 });
 
 export const store = configureStore({
-    devTools: import.meta.env.MODE !== AppEnvironment.PRODUCTION,
+    devTools: Environment.MODE !== AppEnvironment.PRODUCTION,
     reducer: rootReducer,
     middleware: middleware.concat(handleError),
 });
