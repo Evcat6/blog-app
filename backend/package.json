@@ -12,6 +12,7 @@
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
     "lint:js": "eslint \"src/**/*.ts\"",
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/.bin/typeorm",
     "migrate:dev": "npm run typeorm migration:run -- -d ./src/common/database/database-source.ts",
     "migrate:dev:revert": "npm run typeorm -- -d ./src/common/database/database-source.ts migration:revert",
     "lint:type": "tsc --noEmit"
