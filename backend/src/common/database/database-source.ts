@@ -15,6 +15,6 @@ export default new DataSource({
   password: configService.get('DB_PASSWORD'),
   database: configService.get('DB_NAME'),
   entities: [PostEntity, CommentEntity],
-  migrations: ['migrations/*.ts'],
+  migrations: ['src/migrations/*.ts'],
   synchronize: true,
 });
