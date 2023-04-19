@@ -11,4 +11,4 @@
 
 ## Database structure
 
-![Docker_Desktop_NnSruqgEVs](https://user-images.githubusercontent.com/93705949/230775135-250f1fa3-973a-4217-a1e8-66032e9c0fed.png)
+[Diagram](https://dbdiagram.io/d/6440161f6b31947051de7db2)
