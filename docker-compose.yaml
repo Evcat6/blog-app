@@ -24,6 +24,15 @@ services:
       - 4000:4000
     depends_on:
       - postgres
+  pg-admin:
+    image: dpage/pgadmin4:6
+    restart: always
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@gmail.com
+      - PGADMIN_DEFAULT_PASSWORD=password
+      - PGADMIN_LISTEN_PORT=5050
+    ports:
+      - 5050:5050
 
 volumes:
   data:
